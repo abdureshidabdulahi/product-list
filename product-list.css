@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+/* ===============wraps that contain all the things================ */
+.wraper{
+  background-color:rgba(255, 182, 193, 0.1);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+/* =======.container=========== */
+.container{
+    /* background-color: bisque; */
+    width: fit-content;
+    padding: 15px;
+    height: fit-content;
+    background-color:transparent;
+}
+.container img{
+    border-radius: 10px;
+    border: 2px solid none;
+    
+    }
+    .container h2{
+        width: 100%;
+        padding: 10px;
+        font-weight: 900;
+    }
+/* ============= (div1 - div3) inside container ============== */
+.container .div2,.div1,.div3{
+    display: flex;
+    width: 100%;
+   gap: 30px;   
+}
+/* ===========div1 item1,============ */
+.div1 .item1{
+    display: block;
+}
+.item1 .item1-content{
+    padding: 10px 0;
+}
+.item1-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item1-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item1-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.item1 .image1{
+    position: relative;
+    padding-bottom: 10px;
+}
+ .newstyle{
+    background-color: red !important;
+ }
+.image1 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    background-color:white;
+    cursor: pointer;
+}
+.image1 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image1 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+/* =============dev1 item2============= */
+.item2 .item2-content{
+    padding: 10px 0;
+}
+.item2-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item2-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item2-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.item2 .image2{
+    position: relative;
+    padding-bottom: 10px;
+}
+.image2 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image2 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image2 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+/* ==============dev1 item3================= */
+.div3 .item3{
+        display: block;
+}
+.item3 .item3-content{
+    padding: 10px 0;
+}
+.item3-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item3-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item3-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.item3 .image3{
+    position: relative;
+    padding-bottom: 10px;
+}
+.image3 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image3 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image3 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+/* ===================div2 item4===================== */
+.item4 .image4{
+    position: relative;
+    padding-bottom: 10px;
+}
+.item4 .item4-content{
+    padding: 10px 0;
+}
+.item4-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item4-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item4-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.image4 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image4 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image4 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+/* =================div2 item5==================== */
+.item5 .image5{
+    position: relative;
+    padding-bottom: 10px;
+}
+.item5 .item5-content{
+    padding: 10px 0;
+}
+.item5-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item5-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item5-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.image5 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image5 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image5 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* =================div2 item6========================== */
+.item6 .image6{
+    position: relative;
+    padding-bottom: 10px;
+}
+.item6 .item6-content{
+    padding: 10px 0;
+}
+.item6-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item6-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item6-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.image6 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image6 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image6 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* ================div3 item7======================= */
+.item7 .image7{
+    position: relative;
+    padding-bottom: 10px;
+}
+.item7 .item7-content{
+    padding: 10px 0;
+}
+.item7-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item7-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item7-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.image7 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image7 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image7 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* ===============div3 item8======================= */
+.item8 .image8{
+    position: relative;
+    padding-bottom: 10px;
+}
+.item8 .item8-content{
+    padding: 10px 0;
+}
+.item8-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item8-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item8-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.image8 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image8 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image8 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* ================div3 item9======================== */
+.item9 .image9{
+    position: relative;
+    padding-bottom: 10px;
+}
+.item9 .item9-content{
+    padding: 10px 0;
+}
+.item9-content h5{
+    color: rgba(0, 0, 0, 0.498);
+}
+.item9-content p{
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     padding: 3px 0;
+}
+.item9-content  #price{
+    color: rgba(255, 0, 0, 0.621);
+}
+.image9 button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.461);
+    cursor: pointer;
+}
+.image9 .fa-solid{
+    color: rgb(239, 204, 161);
+    font-size: small;
+}
+.image9 p{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    
+}
+/* ============cart at the right-side============ */
+.cart{
+    position: sticky;
+    top: 30px;
+    width: fit-content;
+    background-color:rgba(255, 182, 193, 0.137);
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+   max-height: 600px;
+   margin: 20px 0;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+.cart p{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    left: 46px;
+    color: rgba(0, 0, 0, 0.514);
+}
+.cart h1{
+    width: 100%;
+    text-align: center;
+}
+.cart .fa-solid{
+    color: rgba(0, 0, 0, 0.514);
+}
+
+ 
