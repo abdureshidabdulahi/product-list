@@ -61,10 +61,7 @@ body{
 .item1 .image1{
     position: relative;
     padding-bottom: 10px;
-}
- .newstyle{
-    background-color: red !important;
- }
+} 
 .image1 button{
     width: 120px;
     height: 30px;
@@ -81,11 +78,17 @@ body{
     background-color:white;
     cursor: pointer;
 }
-.image1 .fa-solid{
+.image1 button .plu-min{
+    display: none;
+}
+
+.image1 .shoping-cart{
+    display: block;
     color: rgb(239, 204, 161);
     font-size: small;
 }
-.image1 p{
+.image1 button p{
+    display: inline;
     color: black;
     font-size: small;
     font-weight: bold;
@@ -479,5 +482,24 @@ body{
 .cart .fa-solid{
     color: rgba(0, 0, 0, 0.514);
 }
+/* =============css for javascript=================== */
+button.buttons {
+    background-color: red;
+
+}
+button.buttons .plu-min{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    /* flex: 1; */
+    width: fit-content;
+
+}
+button.buttons .shoping-cart{
+    display: none;
+}
+
+
 
  
