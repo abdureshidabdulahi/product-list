@@ -485,14 +485,17 @@ body{
 /* =============css for javascript=================== */
 button.buttons {
     background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 button.buttons .plu-min{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5px;
-    /* flex: 1; */
+    padding: 5px;
+    
     width: fit-content;
 
 }
