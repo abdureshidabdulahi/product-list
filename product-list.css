@@ -78,10 +78,6 @@ body{
     background-color:white;
     cursor: pointer;
 }
-.image1 button .plu-min{
-    display: none;
-}
-
 .image1 .shoping-cart{
     display: block;
     color: rgb(239, 204, 161);
@@ -483,6 +479,9 @@ body{
     color: rgba(0, 0, 0, 0.514);
 }
 /* =============css for javascript=================== */
+button .plu-min{
+    display: none;
+}
 button.buttons {
     background-color: red;
     display: flex;
@@ -502,6 +501,9 @@ button.buttons .plu-min{
 button.buttons .shoping-cart{
     display: none;
 }
+/* button.buttons span{
+    display: none;
+} */
 
 
 
