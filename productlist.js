@@ -3,6 +3,8 @@ let button = document.querySelectorAll('button');
  let orderTwo  = 1;
  let orderOne = 1;
  let orderThree = 1;
+ let orderFour = 1;
+ let orderFive = 1;
 
  let buttonOneFunc = function(){
  button[0].addEventListener('click', ()=>{
@@ -96,3 +98,64 @@ let buttonTwoFunc = function(){
                }
                decrementBtnThree();
           });
+
+          // ===================buton4=======================
+
+          let buttonFourFunc = function(){
+               button[3].addEventListener('click', ()=>{
+                   if(!button[3].classList.contains('buttons')){
+                        button[3].classList.add('buttons');
+                        document.querySelector('.add-four').innerHTML = orderFour
+                   }
+               })
+               }
+               buttonFourFunc();
+              
+               document.querySelector('.plus-four').addEventListener('click', ()=>{
+                   function incrementBtnFour(){
+                    orderFour++ ;
+                        document.querySelector('.add-four').innerHTML = orderFour
+                    }
+                    incrementBtnFour();
+               })
+              
+               document.querySelector('.minus-four').addEventListener('click', ()=>{
+                   function decrementBtnFour(){
+                        if(orderFour > 0){
+                         orderFour-- ;
+                             document.querySelector('.add-four').innerHTML = orderFour
+                        }
+                        
+                    }
+                    decrementBtnFour();
+               });
+
+               // =================button5=======================
+               let buttonFiveFunc = function(){
+                    button[4].addEventListener('click', ()=>{
+                        if(!button[4].classList.contains('buttons')){
+                             button[4].classList.add('buttons');
+                             document.querySelector('.add-five').innerHTML = orderFour
+                        }
+                    })
+                    }
+                    buttonFiveFunc();
+                   
+                    document.querySelector('.plus-five').addEventListener('click', ()=>{
+                        function incrementBtnFive(){
+                         orderFive++ ;
+                             document.querySelector('.add-five').innerHTML = orderFive
+                         }
+                         incrementBtnFive();
+                    })
+                   
+                    document.querySelector('.minus-five').addEventListener('click', ()=>{
+                        function decrementBtnFive(){
+                             if(orderFive > 0){
+                              orderFive-- ;
+                                  document.querySelector('.add-five').innerHTML = orderFive
+                             }
+                             
+                         }
+                         decrementBtnFive();
+                    });
