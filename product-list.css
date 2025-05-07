@@ -4,24 +4,19 @@
     box-sizing: border-box;
 }
 body{
+    background-color:rgba(255, 182, 193, 0.1);
     width: 100%;
     height: 100vh;
+    display: flex;
+    margin: 0;
 }
-/* ===============wraps that contain all the things================ */
-.wraper{
-  background-color:rgba(255, 182, 193, 0.1);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-/* =======.container=========== */
+ 
 .container{
-    /* background-color: bisque; */
-    width: fit-content;
+    margin-bottom: 30px;
     padding: 15px;
-    height: fit-content;
+    height: calc(100vh - 20px);
     background-color:transparent;
+     
 }
 .container img{
     border-radius: 10px;
@@ -501,9 +496,6 @@ button.buttons .plu-min{
 button.buttons .shoping-cart{
     display: none;
 }
-/* button.buttons span{
-    display: none;
-} */
 
 
 
