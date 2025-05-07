@@ -482,13 +482,40 @@ button.buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* color: white; */
+    
 
+}
+.imageone.image-1,
+.imagetwo.image-2,
+.imagethree.image-3,
+.imagefour.image-4,
+.imagefive.image-5,
+.imagesix.image-6,
+.imageseven.image-7,
+.imageeight.image-8,
+.imagenine.image-9{
+    border: 3px solid red;
+}
+button.buttons .add-one,
+button.buttons .add-two,
+button.buttons .add-three,
+button.buttons .add-four,
+button.buttons .add-five,
+button.buttons .add-six,
+button.buttons .add-seven,
+button.buttons .add-eight,
+button.buttons .add-nine
+{
+    color: white;
 }
 button.buttons .plu-min{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    color: white;
+    font: bold;
     
     width: fit-content;
 

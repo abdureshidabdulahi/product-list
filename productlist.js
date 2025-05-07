@@ -1,5 +1,14 @@
  
 let button = document.querySelectorAll('button');
+let imageOne = document.querySelector('.imageone')
+let imageTwo = document.querySelector('.imagetwo');
+let imageThree = document.querySelector('.imagethree');
+let imagefour = document.querySelector('.imagefour');
+let imageFive = document.querySelector('.imagefive');
+let imageSix = document.querySelector('.imagesix');
+let imageSeven = document.querySelector('.imageseven');
+let imageEight = document.querySelector('.imageeight');
+let imageNine = document.querySelector('.imagenine');
  let orderTwo  = 1;
  let orderOne = 1;
  let orderThree = 1;
@@ -9,38 +18,41 @@ let button = document.querySelectorAll('button');
  let orderSeven = 1;
  let orderEight = 1;
  let orderNine = 1;
+ let total = document.querySelectorAll('.total');
+ let sum = 0;
+ let totalItem = document.querySelector('.total-item')
 
  let buttonOneFunc = function(){
  button[0].addEventListener('click', ()=>{
      if(!button[0].classList.contains('buttons')){
           button[0].classList.add('buttons');
-          document.querySelector('.add-one').innerHTML = orderOne
+          imageOne.classList.add('image-1');
+       
      }
+     document.querySelector('.add-one').innerHTML = orderOne
  })
+ document.querySelector('.plus-one').addEventListener('click', ()=>{
+   
+    function increment(){
+         orderOne++ ;
+        
+     }
+     increment();
+    
+})
+ document.querySelector('.minus-one').addEventListener('click', ()=>{
+    // let orderOne = 1;
+    function decrement(){
+         if(orderOne > 0){
+              orderOne-- ;
+              document.querySelector('.add-one').innerHTML = orderOne
+         }
+         
+     }
+     decrement();
+})
  }
  buttonOneFunc();
- 
- document.querySelector('.plus-one').addEventListener('click', ()=>{
-    
-     function increment(){
-          orderOne++ ;
-          document.querySelector('.add-one').innerHTML = orderOne
-      }
-      increment();
- })
-
- document.querySelector('.minus-one').addEventListener('click', ()=>{
-     // let orderOne = 1;
-     function decrement(){
-          if(orderOne > 0){
-               orderOne-- ;
-               document.querySelector('.add-one').innerHTML = orderOne
-          }
-          
-      }
-      decrement();
- })
-
 
 //  ==============button2===========================
 
@@ -48,60 +60,68 @@ let buttonTwoFunc = function(){
      button[1].addEventListener('click', ()=>{
          if(!button[1].classList.contains('buttons')){
               button[1].classList.add('buttons');
-              document.querySelector('.add-two').innerHTML = orderTwo
+              imageTwo.classList.add('image-2');
          }
+         document.querySelector('.add-two').innerHTML = orderTwo
      })
+     document.querySelector('.plus-two').addEventListener('click', ()=>{
+        function incrementBtnTwo(){
+         orderTwo++ ;
+             
+         }
+         incrementBtnTwo();
+    })
+    document.querySelector('.minus-two').addEventListener('click', ()=>{
+        function decrementBtnTwo(){
+             if(orderTwo > 0){
+
+              orderTwo-- ;
+                  
+             }
+             
+         }
+         decrementBtnTwo();
+    })
      }
      buttonTwoFunc();
     
-     document.querySelector('.plus-two').addEventListener('click', ()=>{
-         function incrementBtnTwo(){
-          orderTwo++ ;
-              document.querySelector('.add-two').innerHTML = orderTwo
-          }
-          incrementBtnTwo();
-     })
     
-     document.querySelector('.minus-two').addEventListener('click', ()=>{
-         function decrementBtnTwo(){
-              if(orderTwo > 0){
-               orderTwo-- ;
-                   document.querySelector('.add-two').innerHTML = orderTwo
-              }
-              
-          }
-          decrementBtnTwo();
-     })
+    
+     
      
      // ==============button3=======================
      let buttonThreeFunc = function(){
           button[2].addEventListener('click', ()=>{
               if(!button[2].classList.contains('buttons')){
                    button[2].classList.add('buttons');
-                   document.querySelector('.add-three').innerHTML = orderThree
+                   imageThree.classList.add('image-3');
+ 
               }
+              document.querySelector('.add-three').innerHTML = orderThree
           })
+          document.querySelector('.plus-three').addEventListener('click', ()=>{
+            function incrementBtnThree(){
+             orderThree++ ;
+                 
+             }
+             incrementBtnThree();
+        })
+        document.querySelector('.minus-three').addEventListener('click', ()=>{
+            function decrementBtnThree(){
+                 if(orderThree > 0){
+                  orderThree-- ;
+                    
+                 }
+                 
+             }
+             decrementBtnThree();
+        });
           }
           buttonThreeFunc();
          
-          document.querySelector('.plus-three').addEventListener('click', ()=>{
-              function incrementBtnThree(){
-               orderThree++ ;
-                   document.querySelector('.add-three').innerHTML = orderThree
-               }
-               incrementBtnThree();
-          })
          
-          document.querySelector('.minus-three').addEventListener('click', ()=>{
-              function decrementBtnThree(){
-                   if(orderThree > 0){
-                    orderThree-- ;
-                        document.querySelector('.add-three').innerHTML = orderThree
-                   }
-                   
-               }
-               decrementBtnThree();
-          });
+         
+         
 
           // ===================buton4=======================
 
@@ -109,90 +129,101 @@ let buttonTwoFunc = function(){
                button[3].addEventListener('click', ()=>{
                    if(!button[3].classList.contains('buttons')){
                         button[3].classList.add('buttons');
-                        document.querySelector('.add-four').innerHTML = orderFour
+                        imagefour.classList.add('image-4');
                    }
+                   document.querySelector('.add-four').innerHTML = orderFour
                })
+               document.querySelector('.plus-four').addEventListener('click', ()=>{
+                function incrementBtnFour(){
+                 orderFour++ ;
+                    
+                 }
+                 incrementBtnFour();
+            })
+            document.querySelector('.minus-four').addEventListener('click', ()=>{
+                function decrementBtnFour(){
+                     if(orderFour > 0){
+                      orderFour-- ;
+                        
+                     }
+                     
+                 }
+                 decrementBtnFour();
+            });
                }
                buttonFourFunc();
               
-               document.querySelector('.plus-four').addEventListener('click', ()=>{
-                   function incrementBtnFour(){
-                    orderFour++ ;
-                        document.querySelector('.add-four').innerHTML = orderFour
-                    }
-                    incrementBtnFour();
-               })
               
-               document.querySelector('.minus-four').addEventListener('click', ()=>{
-                   function decrementBtnFour(){
-                        if(orderFour > 0){
-                         orderFour-- ;
-                             document.querySelector('.add-four').innerHTML = orderFour
-                        }
-                        
-                    }
-                    decrementBtnFour();
-               });
+              
+              
 
                // =================button5=======================
                let buttonFiveFunc = function(){
                     button[4].addEventListener('click', ()=>{
                         if(!button[4].classList.contains('buttons')){
                              button[4].classList.add('buttons');
-                             document.querySelector('.add-five').innerHTML = orderFive
+                             imageFive.classList.add('image-5');
+                             
                         }
+                        document.querySelector('.add-five').innerHTML = orderFive
                     })
-                    }
-                    buttonFiveFunc();
-                   
                     document.querySelector('.plus-five').addEventListener('click', ()=>{
                         function incrementBtnFive(){
                          orderFive++ ;
-                             document.querySelector('.add-five').innerHTML = orderFive
+                           
                          }
                          incrementBtnFive();
                     })
-                   
                     document.querySelector('.minus-five').addEventListener('click', ()=>{
                         function decrementBtnFive(){
                              if(orderFive > 0){
                               orderFive-- ;
-                                  document.querySelector('.add-five').innerHTML = orderFive
+                                  
                              }
                              
                          }
                          decrementBtnFive();
                     });
+                    }
+                    buttonFiveFunc();
+                   
+                    
+                   
+                   
 // ======================button6===========================
 
 let buttonSixFunc = function(){
     button[5].addEventListener('click', ()=>{
         if(!button[5].classList.contains('buttons')){
              button[5].classList.add('buttons');
-             document.querySelector('.add-six').innerHTML = orderSix
+             imageSix.classList.add('image-6');
+              
         }
+        document.querySelector('.add-six').innerHTML = orderSix
     })
-    }
-    buttonSixFunc();
-   
     document.querySelector('.plus-six').addEventListener('click', ()=>{
         function incrementBtnSix(){
          orderSix++ ;
-             document.querySelector('.add-six').innerHTML = orderSix
+            
          }
          incrementBtnSix();
     })
-   
     document.querySelector('.minus-six').addEventListener('click', ()=>{
         function decrementBtnSix(){
              if(orderSix > 0){
               orderSix-- ;
-                  document.querySelector('.add-six').innerHTML = orderSix
+                 
              }
              
          }
          decrementBtnSix();
     });
+    }
+    buttonSixFunc();
+   
+   
+   
+    
 
 // ==============button7=======================
 
@@ -201,30 +232,34 @@ let buttonSevenFunc = function(){
     button[6].addEventListener('click', ()=>{
         if(!button[6].classList.contains('buttons')){
              button[6].classList.add('buttons');
-             document.querySelector('.add-seven').innerHTML = orderSeven
+             imageSeven.classList.add('image-7');
+             
         }
+        document.querySelector('.add-seven').innerHTML = orderSeven
     })
-    }
-    buttonSevenFunc();
-   
     document.querySelector('.plus-seven').addEventListener('click', ()=>{
         function incrementBtnSeven(){
          orderSeven++ ;
-             document.querySelector('.add-seven').innerHTML = orderSeven
+            
          }
          incrementBtnSeven();
     })
-   
     document.querySelector('.minus-seven').addEventListener('click', ()=>{
         function decrementBtnSeven(){
              if(orderSeven > 0){
               orderSeven-- ;
-                  document.querySelector('.add-seven').innerHTML = orderSeven
+               
              }
              
          }
          decrementBtnSeven();
     });
+    }
+    buttonSevenFunc();
+   
+   
+   
+   
 
     // ================button8==================
 
@@ -232,58 +267,72 @@ let buttonSevenFunc = function(){
         button[7].addEventListener('click', ()=>{
             if(!button[7].classList.contains('buttons')){
                  button[7].classList.add('buttons');
-                 document.querySelector('.add-eight').innerHTML = orderEight
+                 imageEight.classList.add('image-8');
+                  
             }
+            document.querySelector('.add-eight').innerHTML = orderEight
         })
-        }
-        buttonEightFunc();
-       
         document.querySelector('.plus-eight').addEventListener('click', ()=>{
             function incrementBtnEight(){
              orderEight++ ;
-                 document.querySelector('.add-eight').innerHTML = orderEight
+                
              }
              incrementBtnEight();
         })
-       
         document.querySelector('.minus-eight').addEventListener('click', ()=>{
             function decrementBtnEight(){
                  if(orderEight > 0){
                   orderEight-- ;
-                      document.querySelector('.add-eight').innerHTML = orderEight
+                     
                  }
                  
              }
              decrementBtnEight();
         });
 
+        }
+        buttonEightFunc();
+       
+       
+       
+        
         // ===============button9==================
 
         let buttonNineFunc = function(){
             button[8].addEventListener('click', ()=>{
                 if(!button[8].classList.contains('buttons')){
                      button[8].classList.add('buttons');
-                     document.querySelector('.add-nine').innerHTML = orderNine
+                     imageNine.classList.add('image-9');
+                      
                 }
+                document.querySelector('.add-nine').innerHTML = orderNine
             })
-            }
-            buttonNineFunc();
-           
             document.querySelector('.plus-nine').addEventListener('click', ()=>{
                 function incrementBtnNine(){
                  orderNine++ ;
-                     document.querySelector('.add-nine').innerHTML = orderNine
+                     
+                    
                  }
                  incrementBtnNine();
+                 
             })
-           
             document.querySelector('.minus-nine').addEventListener('click', ()=>{
                 function decrementBtnNine(){
                      if(orderNine > 0){
                       orderNine-- ;
-                          document.querySelector('.add-nine').innerHTML = orderNine
+                          
                      }
                      
                  }
                  decrementBtnNine();
             });
+            }
+            buttonNineFunc();
+           
+           
+           
+           
+            // ============end buttons==============
+
+                
+         
