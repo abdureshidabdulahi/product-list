@@ -9,6 +9,8 @@ let imageSix = document.querySelector('.imagesix');
 let imageSeven = document.querySelector('.imageseven');
 let imageEight = document.querySelector('.imageeight');
 let imageNine = document.querySelector('.imagenine');
+let pistachio = document.querySelector('.pistachio');
+let lists = document.querySelector('.lists')
  let orderTwo  = 1;
  let orderOne = 1;
  let orderThree = 1;
@@ -18,10 +20,9 @@ let imageNine = document.querySelector('.imagenine');
  let orderSeven = 1;
  let orderEight = 1;
  let orderNine = 1;
- let total = document.querySelectorAll('.total');
  let sum = 0;
- let totalItem = document.querySelector('.total-item')
-
+ 
+  
  let buttonOneFunc = function(){
  button[0].addEventListener('click', ()=>{
      if(!button[0].classList.contains('buttons')){
@@ -29,19 +30,26 @@ let imageNine = document.querySelector('.imagenine');
           imageOne.classList.add('image-1');
        
      }
-     document.querySelector('.add-one').innerHTML = orderOne
+     document.querySelector('.add-one').innerHTML = orderOne ;
+     let value = parseInt(button[0].getAttribute('data-value'));
+     sum += value;
+     document.querySelector('.total-item').innerHTML = parseInt(sum) || 0;
+    let li = document.createElement('li')
+    li.textContent = pistachio.textContent;
+    li.appendChild(orderOne)
+    lists.appendChild(li)
+
  })
  document.querySelector('.plus-one').addEventListener('click', ()=>{
    
     function increment(){
          orderOne++ ;
-        
+        return orderOne;
      }
      increment();
     
 })
  document.querySelector('.minus-one').addEventListener('click', ()=>{
-    // let orderOne = 1;
     function decrement(){
          if(orderOne > 0){
               orderOne-- ;
@@ -53,6 +61,7 @@ let imageNine = document.querySelector('.imagenine');
 })
  }
  buttonOneFunc();
+ 
 
 //  ==============button2===========================
 
@@ -335,4 +344,4 @@ let buttonSevenFunc = function(){
             // ============end buttons==============
 
                 
-         
+     

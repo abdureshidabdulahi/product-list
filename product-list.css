@@ -205,7 +205,7 @@ body{
     padding: 0 5px;
     position: absolute;
     bottom: 0;
-    right: 15px;
+    right: 25px;
     border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.461);
     cursor: pointer;
@@ -482,7 +482,6 @@ button.buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* color: white; */
     
 
 }

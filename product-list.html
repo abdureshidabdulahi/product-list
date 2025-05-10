@@ -20,13 +20,13 @@
                     <button>
                         <i class="fa-solid fa-minus plu-min minus-one"></i>
                         <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                        <p class="add-one total"><span>Add to cart</span></p>
+                        <p class="add-one total value"><span>Add to cart</span></p>
                         <i class="fa-solid fa-plus plu-min plus-one"></i>
                     </button>
                </div>
                 <div class="item1-content">
                      <h5>Baklava</h5>
-                     <p>pistachio Baklava</p>
+                     <p class="pistachio">pistachio Baklava</p>
                      <p id="price">$4.00</p>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <button>
                     <i class="fa-solid fa-minus plu-min minus-two"></i>
                     <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                    <p class="add-two total"> <span>Add to cart</span></p>
+                    <p class="add-two total value"> <span>Add to cart</span></p>
                     <i class="fa-solid fa-plus plu-min plus-two"></i>
                 </button>
             </div> 
@@ -56,7 +56,7 @@
                     <button>
                         <i class="fa-solid fa-minus plu-min minus-three"></i>
                     <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                    <p class="add-three total"> <span>Add to cart</span></p>
+                    <p class="add-three total value"> <span>Add to cart</span></p>
                     <i class="fa-solid fa-plus plu-min plus-three"></i>
                     </button>
                 </div>
@@ -76,7 +76,7 @@
                     <button>
                         <i class="fa-solid fa-minus plu-min minus-four"></i>
                         <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                        <p class="add-four total"> <span>Add to cart</span></p>
+                        <p class="add-four total value"> <span>Add to cart</span></p>
                         <i class="fa-solid fa-plus plu-min plus-four"></i>
                     </button>
                 </div>
@@ -94,7 +94,7 @@
                 <button>
                     <i class="fa-solid fa-minus plu-min minus-five"></i>
                         <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                        <p class="add-five total"> <span>Add to cart</span></p>
+                        <p class="add-five total value"> <span>Add to cart</span></p>
                         <i class="fa-solid fa-plus plu-min plus-five"></i>
                 </button>
             </div>
@@ -109,10 +109,10 @@
             <div class="item6">
                <div class="image6"> 
                 <img src="assets/image-meringue-desktop.jpg" alt="" width="150px" height="150px" class="imagesix">
-                <button>
+                <button data-value="1">
                     <i class="fa-solid fa-minus plu-min minus-six"></i>
                     <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                    <p class="add-six total"> <span>Add to cart</span></p>
+                    <p class="add-six total value"> <span>Add to cart</span></p>
                     <i class="fa-solid fa-plus plu-min plus-six"></i>
                 </button>
             </div>
@@ -131,7 +131,7 @@
                 <button>
                     <i class="fa-solid fa-minus plu-min minus-seven"></i>
                     <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                    <p class="add-seven total"> <span>Add to cart</span></p>
+                    <p class="add-seven value total"> <span>Add to cart</span></p>
                     <i class="fa-solid fa-plus plu-min plus-seven"></i>
                 </button>
             </div>
@@ -148,7 +148,7 @@
                 <button>
                     <i class="fa-solid fa-minus plu-min minus-eight"></i>
                     <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                    <p class="add-eight total"> <span>Add to cart</span></p>
+                    <p class="add-eight total value"> <span>Add to cart</span></p>
                     <i class="fa-solid fa-plus plu-min plus-eight"></i>
                 </button>
             </div>
@@ -165,7 +165,7 @@
                 <button>
                     <i class="fa-solid fa-minus plu-min minus-nine"></i>
                     <i class=" shoping-cart fa-solid fa-cart-shopping"></i> 
-                    <p class="add-nine total"> <span>Add to cart</span></p>
+                    <p class="add-nine total value"> <span>Add to cart</span></p>
                     <i class="fa-solid fa-plus plu-min plus-nine"></i>
                 </button>
             </div>
@@ -182,6 +182,9 @@
     <!-- /* ============cart at the right-side============ */ -->
     <div class="cart">
         <h1><i class="fa-solid fa-cart-shopping"></i>your cart<span class="total-item"></span></h1>
+        <div class="lists">
+            
+        </div>
         <p><b>your added items are shown here</b></p>
     </div>
 <script src="productlist.js"></script>
